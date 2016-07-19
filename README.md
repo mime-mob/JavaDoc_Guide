@@ -18,8 +18,8 @@
 	file -> settings -> Editor -> File and Code Templates
 </br>右侧选择  **Includes**  然后选择 **File Header**
 ![这里写图片描述](https://github.com/mime-mob/JavaDoc_Guide/blob/master/img/pic5.png)
-</br>内置的变量：
-	**\${PACKAGE_NAME}** 文件所在的包名</br>
+</br>内置的变量：</br>
+**\${PACKAGE_NAME}** 文件所在的包名</br>
 **\${USER}** 当前系统的登录名</br>
 **\${DATE}** 当前系统日期</br>
 **\${TIME}** 当前系统的时间</br>
@@ -77,14 +77,15 @@ javadoc文档包含三个部分：</br>
 ##Javadoc的标签
 ###doc标签
 > @author 标明开发该类模块的作者，可以多次使用来指明多个作者
-> @version 标明该类模块的版本
-> @param 方法中某个参数的说明
-> @return 方法中返回值的说明
-> @exception 对方法可能抛出的异常进行说明，@throws也是一样的
-> @see 参考转向，也就是相关 主题
-> @since 标明方法、类可运行的版本号
-> @serial（或者是@serialField或者是@serialData）某个系列？
-> @deprecated 表示已经废弃的方法
+@version 标明该类模块的版本
+@param 方法中某个参数的说明
+@return 方法中返回值的说明
+@exception 对方法可能抛出的异常进行说明，@throws也是一样的
+@see 参考转向，也就是相关 主题
+@since 标明方法、类可运行的版本号
+@serial（或者是@serialField或者是@serialData）某个系列？
+@deprecated 表示已经废弃的方法
+
 ###标签顺序
 当有多个标签时，标签的顺序跟上述顺序是一样的。但是如果同一个标签出现了不止一次的话。可以分组标签，比如说多个@see标签，可以将所有的标签写在一起，每个标签单独一行。
 </br>多个@author标签的话，以时间顺序，罗列在最开始的地方
@@ -132,10 +133,13 @@ javadoc文档包含三个部分：</br>
 - 你认为使用者在想要看到更多信息的时候
 - 当API名称第一次出现在文档中的时候。不要重复用同一个链接
 </br>因为我们的读者都是程序员，因此并不是所有的API都需要添加连接的，java.lang中的API或者其他众所周知的方法都不需要添加。
+
 ###可以为一般的方法或者构造方法省略括号	
 当你在写javadoc文档的时候需要指明一个方法或者构造函数有多个形式，如果你需要具体指明某一个确切的方法的话，那么就要使用括号和参数类型。
+
 ###使用短语代替完整的句子也是可以的
 特别是在做初步总结和param标记做描述的时候。
+
 ###使用第三人称的描述而不是第二人称的规定
 举个例子：
 </br>Gets the label. （推荐）
