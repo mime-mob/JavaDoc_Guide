@@ -76,15 +76,15 @@ javadoc文档包含三个部分：</br>
 
 ##Javadoc的标签
 ###doc标签
-> @author 标明开发该类模块的作者，可以多次使用来指明多个作者
-@version 标明该类模块的版本
-@param 方法中某个参数的说明
-@return 方法中返回值的说明
-@exception 对方法可能抛出的异常进行说明，@throws也是一样的
-@see 参考转向，也就是相关 主题
-@since 标明方法、类可运行的版本号
-@serial（或者是@serialField或者是@serialData）某个系列？
-@deprecated 表示已经废弃的方法
+> @author 标明开发该类模块的作者，可以多次使用来指明多个作者</br>
+@version 标明该类模块的版本</br>
+@param 方法中某个参数的说明</br>
+@return 方法中返回值的说明</br>
+@exception 对方法可能抛出的异常进行说明，@throws也是一样的</br>
+@see 参考转向，也就是相关 主题</br>
+@since 标明方法、类可运行的版本号</br>
+@serial（或者是@serialField或者是@serialData）某个系列？</br>
+@deprecated 表示已经废弃的方法</br>
 
 ###标签顺序
 当有多个标签时，标签的顺序跟上述顺序是一样的。但是如果同一个标签出现了不止一次的话。可以分组标签，比如说多个@see标签，可以将所有的标签写在一起，每个标签单独一行。
@@ -328,7 +328,8 @@ public abstract class Graphics {
 #Live Template
 路径：
 >File -> Settings -> Editor -> Live Templates
-</br>第一步：添加模版
+
+第一步：添加模版
 </br>![添加模版](https://github.com/mime-mob/JavaDoc_Guide/blob/master/img/pic6.png)
 </br>Abbreviation： 表示快捷输入关键字
 </br>第二步：在代码编辑页面输入关键字
