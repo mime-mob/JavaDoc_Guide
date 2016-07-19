@@ -1,24 +1,24 @@
 #版权信息配置
-	File -> settings -> Editor -> Copyright -> Copyright Profiles
-![添加版权文件](http://img.blog.csdn.net/20160714162924180)
-添加一个版本信息文件；右侧会出现默认的copyright信息，如名称（添加时输入的名称）、版权内容、在注释中添加版权信息的关键字等。
-![版权文件信息](http://img.blog.csdn.net/20160714180038309)
-这里，我们主要修改版本内容；具体内容略。修改完成后点击“Validate”按钮。
-
+>File -> settings -> Editor -> Copyright -> Copyright Profiles
+</br>
+![添加版权文件](https://github.com/mime-mob/JavaDoc_Guide/blob/master/img/pic.png)
+</br>添加一个版本信息文件；右侧会出现默认的copyright信息，如名称（添加时输入的名称）、版权内容、在注释中添加版权信息的关键字等。</br>
+![版权文件信息](https://github.com/mime-mob/JavaDoc_Guide/blob/master/img/pic2.png)
+</br>这里，我们主要修改版本内容；具体内容略。修改完成后点击“Validate”按钮。
+</br>
 添加完成后，还需要设置一下，才能将版权信息添加到文件中。
-1. 在Settings中左侧选中Copyright，然后在右侧的下拉选择中选择刚刚添加的copyright。
-![配置copyright](http://img.blog.csdn.net/20160714180516484)
-2. 选中后，点击 + 号，然后选择ALL
-![添加ALL](http://img.blog.csdn.net/20160714181154815)
-
+</br>1. 在Settings中左侧选中Copyright，然后在右侧的下拉选择中选择刚刚添加的copyright。</br>
+![配置copyright](https://github.com/mime-mob/JavaDoc_Guide/blob/master/img/pic3.png)
+</br>2. 选中后，点击 + 号，然后选择ALL</br>
+![添加ALL](https://github.com/mime-mob/JavaDoc_Guide/blob/master/img/pic4.png)
+</br>
 以上
-
-#Javadoc
+</br>
 ##类说明及作者
 	file -> settings -> Editor -> File and Code Templates
-右侧选择  **Includes**  然后选择 **File Header**
-![这里写图片描述](http://img.blog.csdn.net/20160718090702387)
-内置的变量：
+</br>右侧选择  **Includes**  然后选择 **File Header**
+![这里写图片描述](https://github.com/mime-mob/JavaDoc_Guide/blob/master/img/pic5.png)
+</br>内置的变量：
 >**\${PACKAGE_NAME}** 文件所在的包名
 **\${USER}** 当前系统的登录名
 **\${DATE}** 当前系统日期
@@ -112,48 +112,48 @@ javadoc文档包含三个部分：
 @see package
 ```
 ###便签说明风格
-@param： 一个空格然后跟参数的变量名字，之后空格跟对该参数的描述
-@return： 如果返回为空的话可以省略，如果返回值就是参数值，必须用与参数值一致的描述
-@throws：函数所抛异常，需要说明抛异常的情况
-@deprecated 说明废弃原因，以及替代方法如果有的话
+@param： 一个空格然后跟参数的变量名字，之后空格跟对该参数的描述</br>
+@return： 如果返回为空的话可以省略，如果返回值就是参数值，必须用与参数值一致的描述</br>
+@throws：函数所抛异常，需要说明抛异常的情况</br>
+@deprecated 说明废弃原因，以及替代方法如果有的话</br>
 ###变量
-{@inheritDoc} 从复写方法中拷贝出来的描述
-{@link reference} 链接到其他的引用
-{@Value} 返回一个静态作用域值
+{@inheritDoc} 从复写方法中拷贝出来的描述</br>
+{@link reference} 链接到其他的引用</br>
+{@Value} 返回一个静态作用域值</br>
 
 
 ##风格说明
 ###使用在关键词或者名称上添加`<code>...</code>` 样式 
- 关键词包括：
-Java关键字 | 包名 | 类名 | 方法名 | 接口名 | 属性名 | 参数名 | 代码示例
+</br>关键词包括：</br>
+>Java关键字 | 包名 | 类名 | 方法名 | 接口名 | 属性名 | 参数名 | 代码示例
 
 ### 合理使用内链
-对API的名称上添加{@link}的便签是被鼓励的行为，但是也没有必要在doc的文档里给每个API的名字上都添加上这个链接便签。因为链接会修改自身的颜色，下划线，在源代码中的注释中的长度来引起注意，如果大量使用的话反而会引起阅读时困难。在哪些情况下使用链接呢？
+对API的名称上添加{@link}的便签是被鼓励的行为，但是也没有必要在doc的文档里给每个API的名字上都添加上这个链接便签。因为链接会修改自身的颜色，下划线，在源代码中的注释中的长度来引起注意，如果大量使用的话反而会引起阅读时困难。在哪些情况下使用链接呢？</br>
 - 你认为使用者在想要看到更多信息的时候
 - 当API名称第一次出现在文档中的时候。不要重复用同一个链接
-因为我们的读者都是程序员，因此并不是所有的API都需要添加连接的，java.lang中的API或者其他众所周知的方法都不需要添加。
+</br>因为我们的读者都是程序员，因此并不是所有的API都需要添加连接的，java.lang中的API或者其他众所周知的方法都不需要添加。
 ### 可以为一般的方法或者构造方法省略括号	
 当你在写javadoc文档的时候需要指明一个方法或者构造函数有多个形式，如果你需要具体指明某一个确切的方法的话，那么就要使用括号和参数类型。
 ### 使用短语代替完整的句子也是可以的
 特别是在做初步总结和param标记做描述的时候。
 ###使用第三人称的描述而不是第二人称的规定
 举个例子：
-Gets the label. （推荐）
-Get the label. （避免）
+</br>Gets the label. （推荐）
+</br>Get the label. （避免）
 ###方法的描述以动词短语开始
-方法一般是实现一个操作，因此通常是以动词短语开始。
-举个例子：
-Gets the label of the button.（推荐）
-this method gets the label of this button(避免)
+</br>方法一般是实现一个操作，因此通常是以动词短语开始。
+</br>举个例子：
+</br>Gets the label of the button.（推荐）
+</br>this method gets the label of this button(避免)
 ###类，接口，属性描述可以省略主题或所陈述的对象
-这些API通过是描述物件而非动作行为。
-举个例子：
-A button label.（推荐）
-This field is a button label. （避免）
+</br>这些API通过是描述物件而非动作行为。
+</br>举个例子：
+</br>A button label.（推荐）
+</br>This field is a button label. （避免）
 ###当指向一个当前类创建的对象时，使用 this 代替 the。
-举个例子：API  getToolkit 方法的描述应该是：
-Gets the toolkit for this component. （推荐）
-Gets the toolkit for the component. （避免）
+</br>举个例子：API  getToolkit 方法的描述应该是：
+</br>Gets the toolkit for this component. （推荐）
+</br>Gets the toolkit for the component. （避免）
 ###添加超过API名称的描述
 好的API的名称能够告诉你这个API是做什么的；如果描述中还要重复API的名称的话，那就没有提供更多的信息。举个例子：
 ```
@@ -181,8 +181,8 @@ public void setToolTipText(String text) {
 
 ##匿名内部类
 Javadoc 工具是不能直接生产匿名内部类的文档的。匿名内部类的声明和文档注释都是被忽略的。如果你想给一个匿名内部类添加注解文档，那么比较好的方法是通过给他外部的类或者调用它的方法上添加注解。
-举个例子：
-如果你想给makeTree方法中用到的匿名内部类TreeSelectionListener添加一个注解。你可以在makeTree的方法中添加注解。
+</br>举个例子：
+</br>如果你想给makeTree方法中用到的匿名内部类TreeSelectionListener添加一个注解。你可以在makeTree的方法中添加注解。
 ```
  /**
      * The method used for creating the tree. Any structural 
@@ -324,11 +324,11 @@ public abstract class Graphics {
 #Live Template
 路径：
 >File -> Settings -> Editor -> Live Templates
-第一步：添加模版
-![添加模版](http://img.blog.csdn.net/20160718163601164)
-Abbreviation： 表示快捷输入关键字
-第二步：在代码编辑页面输入关键字
-![使用](http://img.blog.csdn.net/20160718163748527)
-第三步：生成代码块
-![生成代码](http://img.blog.csdn.net/20160718163828443)
+</br>第一步：添加模版
+</br>![添加模版](https://github.com/mime-mob/JavaDoc_Guide/blob/master/img/pic6.png)
+</br>Abbreviation： 表示快捷输入关键字
+</br>第二步：在代码编辑页面输入关键字
+</br>![使用](https://github.com/mime-mob/JavaDoc_Guide/blob/master/img/pic7.png)
+</br>第三步：生成代码块
+![生成代码](https://github.com/mime-mob/JavaDoc_Guide/blob/master/img/pic8.png)
 
