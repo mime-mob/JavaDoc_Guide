@@ -1,6 +1,6 @@
 #版权信息配置
 >File -> settings -> Editor -> Copyright -> Copyright Profiles
-</br>
+
 ![添加版权文件](https://github.com/mime-mob/JavaDoc_Guide/blob/master/img/pic.png)
 </br>添加一个版本信息文件；右侧会出现默认的copyright信息，如名称（添加时输入的名称）、版权内容、在注释中添加版权信息的关键字等。</br>
 ![版权文件信息](https://github.com/mime-mob/JavaDoc_Guide/blob/master/img/pic2.png)
