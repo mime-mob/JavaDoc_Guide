@@ -145,17 +145,17 @@ javadoc文档包含三个部分：</br>
 </br>Gets the label. （推荐）
 </br>Get the label. （避免）
 ###方法的描述以动词短语开始
-</br>方法一般是实现一个操作，因此通常是以动词短语开始。
+方法一般是实现一个操作，因此通常是以动词短语开始。
 </br>举个例子：
 </br>Gets the label of the button.（推荐）
 </br>this method gets the label of this button(避免)
 ###类，接口，属性描述可以省略主题或所陈述的对象
-</br>这些API通过是描述物件而非动作行为。
+这些API通过是描述物件而非动作行为。
 </br>举个例子：
 </br>A button label.（推荐）
 </br>This field is a button label. （避免）
 ###当指向一个当前类创建的对象时，使用 this 代替 the。
-</br>举个例子：API  getToolkit 方法的描述应该是：
+举个例子：API  getToolkit 方法的描述应该是：
 </br>Gets the toolkit for this component. （推荐）
 </br>Gets the toolkit for the component. （避免）
 ###添加超过API名称的描述
